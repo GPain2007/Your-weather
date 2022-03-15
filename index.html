@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/1147ef332e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather For You</title>
+  </head>
+  <body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-title">
+        <i class="fa-solid fa-sun-cloud"></i>Weather For You
+      </h1>
+      <p>Search for City and Check out the Weather there!</p>
+    </header>
+
+    <main class="flex-row justify-space-between">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search By City</h3>
+          <form id="city-form" class="card-body">
+            <input
+              name="city"
+              id="city"
+              type="text"
+              autofocus="true"
+              class="form-input"
+            />
+            <button type="submit" class="btn">Find your City</button>
+          </form>
+          <span id="city-search-term"></span>
+
+          <div id="city-container" class="list-group"></div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4"></div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
