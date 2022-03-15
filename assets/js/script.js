@@ -57,24 +57,23 @@ var displayCity = function (citys, searchTerm) {
 
     var cityEl = document.createElement("a");
     cityEl.classList = "list-item flex-row justify-space-between align-center";
-    cityEl.setAttribute("href", "./single-repo.html?repo=" + cityName);
 
     // create a span element to hold repository name
     var titleEl = document.createElement("span");
     titleEl.textContent = cityName;
 
     // append to container
-    repoEl.appendChild(titleEl);
+    cityEl.appendChild(titleEl);
 
     // create a status element
     var statusEl = document.createElement("span");
     statusEl.classList = "flex-row align-center";
 
     // append to container
-    repoEl.appendChild(statusEl);
+    cityEl.appendChild(statusEl);
 
     // append container to the dom
-    repoContainerEl.appendChild(repoEl);
+    cityContainerEl.appendChild(cityEl);
   }
 };
 cityFormEl.addEventListener("submit", formSubmitHandler);
