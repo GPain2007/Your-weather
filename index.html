@@ -34,6 +34,7 @@
     </header>
 
     <main class="flex-row justify-space-between">
+      
       <div class="col-12 col-md-4">
         <div class="card">
           <h3 class="card-header text-uppercase">Search By City</h3>
@@ -44,16 +45,86 @@
               type="text"
               autofocus="true"
               class="form-input"
+              
             />
             <button type="submit" class="btn">Find your City</button>
           </form>
-          <span id="city-search-term"></span>
-
-          <div id="city-container" class="list-group"></div>
+          <div id="citySearchHistory"></div>
         </div>
+        
       </div>
-      <div class="col-12 col-md-4"></div>
+      <div class="container col-10 col-md-4">
+        <div class="current-info">
+          <div class="city-container">
+            <div id="city" class="city">Austin</div>
+            <div class="date" id="date"></div>
+            <img alt="weather icon" class="icon-main">
+          </div> <div class="others" id="current-weather-items">
+            <div class="weather-item">
+              <div>Temp:</div>
+              <div class="temp-current">0</div>
+            </div>
+            <div class="weather-item">
+              <div>Wind:</div>
+              <div class="wind-current">0</div>
+            </div>
+            <div class="weather-item">
+              <div>Humidity:</div>
+              <div class="humidity-current">0</div>
+            </div>
+            <div class="weather-item">
+              <div>U/V index:</div>
+            </div>
+          </div>
+        </div>
+        </div>
     </main>
+    
+        
+       
+
+      <div class="weather-forecast" id="weather-forecast">
+        <div class="weather-forcast-item">
+          <div class="dates">Date</div>
+          <img alt="weather icon" class="w-icon">
+          <div class="temps">Temp: &#176; F</div>
+          <div class="humiditys">Humidity: </div>
+          <div class="winds">Wind Speed: </div>
+        </div>
+        <div class="weather-forcast-item">
+          <div class="dates1">Date</div>
+          <img  alt="weather icon" class="iconA">
+          <div class="tempA">Temp: &#176; F</div>
+          <div class="humidityA">Humidity: </div>
+          <div class="windA">Wind Speed: </div>
+        </div>
+        <div class="weather-forcast-item">
+          <div class="dates2">Date</div>
+          <img  alt="weather icon" class="icon2">
+          <div class="temp2">Temp: &#176; F</div>
+          <div class="humidity2">Humidity: </div>
+          <div class="wind2">Wind Speed: </div>
+        </div>
+        <div class="weather-forcast-item">
+          <div class="dates3">Date</div>
+          <img  alt="weather icon" class="icon3">
+          <div class="temp3">Temp: &#176; F</div>
+          <div class="humidity3">Humidity: </div>
+          <div class="wind3">Wind Speed: </div>
+        </div>
+        <div class="weather-forcast-item">
+          <div class="dates4">Date</div>
+          <img alt="weather icon" class="icon4">
+          <div class="temp4">Temp: &#176; F</div>
+          <div class="humidity4">Humidity: </div>
+          <div class="wind4">Wind Speed: </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

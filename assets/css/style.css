@@ -37,6 +37,7 @@ h6 {
 main {
   margin: 20px auto;
   width: 94%;
+  display: flex;
 }
 
 p {
@@ -498,4 +499,72 @@ p {
   .col-xl-12 {
     flex: 0 0 100%;
   }
+}
+.container {
+  padding: 20px 70px;
+  color: #1b2fe6;
+}
+.current-info {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.city-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.city-container .city {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.current-info {
+  border-color: #1b2fe6;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid #1b2fe6;
+}
+.current-info .date {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.current-info .others {
+  display: flex;
+  flex-direction: column;
+}
+.current-info .others .weather-item {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-forecast {
+  padding: 25px;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  color: #1b2fe6;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.weather-forecast .weather-forcast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 15px;
+}
+.weather-forecast .weather-forcast-item .date {
+  padding: 5px 15px;
+  text-align: center;
+}
+.weather-forecast .weather-forcast-item .temp {
+  font-weight: 100;
 }
